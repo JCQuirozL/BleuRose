@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+	<Lista>
+		<Elemento>
+			<Titulo>Productos de Calidad</Titulo>
+		</Elemento>
+		<Elemento>
+			<Titulo>Precio justo</Titulo>
+		</Elemento>
+		<Elemento>
+			<Titulo>Mano de obra local</Titulo>
+		</Elemento>
+		<Elemento>
+			<Titulo>Reconocimiento internacional</Titulo>
+		</Elemento>
+		
+	</Lista>
+	<Items>
+		<Item Numero="1" Nombre="La mejor Oferta" Descripción="Novedades en Venta">
+		</Item>
+		<Item Numero="2" Nombre="Ofertas relámpago" Descripción="Obtén los Mejores Productos">
+		</Item>
+		<Item Numero="3" Nombre="Último minuto" Descripción="consigue ofertas de última hora">
+		</Item>
+		<Item Numero="4" Nombre="Precios Justos" Descripción="Los mejores precios del mercado">
+		</Item>
+	</Items>
+	<Opciones>
+		<Opcion Url="/Default.aspx?Id=0" Texto="Inicio" Id="0"></Opcion>
+		<Opcion Url="/Default.aspx?Id=1" Texto="Productos" Id="1"></Opcion>
+		<Opcion Url="/Default.aspx?Id=2" Texto="Nosotros" Id="2"></Opcion>
+		<Opcion Url="/Default.aspx?Id=3" Texto="Contacto" Id="3"></Opcion>
+	</Opciones>
+	<Prendas>
+		<Tipo Nombre="Calzado">
+			<Prenda Nombre="Botas pal' frío" Id="1">
+				<Descripcion>Unas botitas pa' cuando vayas a la montaña o a un lugar que haga chingo de frío ALV!</Descripcion>
+				<Precio>$850</Precio>
+				<Imagen>/assets/images/product_01.jpg</Imagen>
+			</Prenda>
+		</Tipo>
+		<Tipo Nombre="Gorros">
+			<Prenda Nombre="Gorrito pal' frío" Id="2">
+				<Descripcion>Gorritos bara bara pa' cuando vayas a la montaña o a un lugar que haga chingo de frío tambien como no ALV!</Descripcion>
+				<Precio>$250</Precio>
+				<Imagen>/assets/images/product_02.jpg</Imagen>
+			</Prenda>
+		</Tipo>
+		<Tipo Nombre="Bufandas">
+			<Prenda Nombre="Bufandas de colores" Id="3">
+				<Descripcion>Bufandas baras pa' que no se te congele el buche</Descripcion>
+				<Precio>$350</Precio>
+				<Imagen>/assets/images/product_03.jpg</Imagen>
+			</Prenda>
+		</Tipo>
+		<Tipo Nombre="Regalos">
+			<Prenda Nombre="Regalitos navideños" Id="4">
+				<Descripcion>Muñequitos de nieve hechos de tela o cualquier otra pendejada pa' que regales en navidá</Descripcion>
+				<Precio>$150</Precio>
+				<Imagen>/assets/images/product_04.jpg</Imagen>
+			</Prenda>
+		</Tipo>
+		<Tipo Nombre="Suéteres">
+			<Prenda Nombre="Suéteres calientitos" Id="5">
+				<Descripcion>Suéters bien padres pa' que luzcas bien perrón y no te congeles cuando haga frío pinche perro!</Descripcion>
+				<Precio>$650</Precio>
+				<Imagen>/assets/images/product_05.jpg</Imagen>
+			</Prenda>
+		</Tipo>
+		<Tipo Nombre="Adornos">
+			<Prenda Nombre="Adornitos Navideños" Id="6">
+				<Descripcion>Chingaderas pa' que cuelgues en tu arbolito navieño culero si es que tienes sino no compres ALV!</Descripcion>
+				<Precio>$80</Precio>
+				<Imagen>/assets/images/product_06.jpg</Imagen>
+			</Prenda>
+		</Tipo>
+	</Prendas>
+	<Team>
+		<Members>
+			<Member Nombre="Fulano1">
+				<Puesto>Fundador</Puesto>
+				<Descripcion>Éste vato es el fundador</Descripcion>
+			</Member>
+			<Member Nombre="Fulano2">
+				<Puesto>Experta en productos</Puesto>
+				<Descripcion>Ésta morra es la mera chicles pa' los productos que vendemos</Descripcion>
+
+			</Member>
+			<Member Nombre="Fulano3">
+				<Puesto>Jefe de Marketing</Puesto>
+				<Descripcion>Éste vato es el todo el rollo de mercadotenia, si estamos bien posicionados es por el y si valemos vrg@ es por el tmb</Descripcion>
+			</Member>
+			<Member Nombre="Fulano4">
+				<Puesto>Especialista en productos</Puesto>
+				<Descripcion>Ésta morra es la especialista en productos (ya tenemos una experta no sé pa' que chingados queremos una "especialista" pero bueno)</Descripcion>
+			</Member>
+			<Member Nombre="Fulano5">
+				<Puesto>Fotógrafo de Productos</Puesto>
+				<Descripcion>Éste man saca unas fotitos bien chulas pa' nuestros productos</Descripcion>
+			</Member>
+			<Member Nombre="Fulano6">
+				<Puesto>Manager</Puesto>
+				<Descripcion>Éste morra es la de las decisiones chakas</Descripcion>
+			</Member>
+		</Members>
+	</Team>
+	<Destacado>
+		<Caracteristica Nombre="Administración de Producto">
+			<Descripcion>No es por nada pero contamos con un stock y una logística perrona de nuestros productos</Descripcion>
+		</Caracteristica>
+		<Caracteristica Nombre="Relaciones con el Cliente">
+			<Descripcion>Mantenemos una relación estrecha con nuestros clientes y es de primera clase Pa</Descripcion>
+		</Caracteristica>
+		<Caracteristica Nombre="Coleccion Global">
+			<Descripcion>Contamos con una colección de productos que ni Obama tiene amigo</Descripcion>
+		</Caracteristica>
+	</Destacado>
+	<Datos>
+		<Empresa>BLEUROSE</Empresa>
+		<Descripcion>BleuRose es una empresa recién fundada con experiencia en el mercado ofreciendo prendas de invierno de calidad a precio justo y duraderas.</Descripcion>
+		<Direccion>Blvd. San Felipe #222 Col. Valle del Ángel, Puebla, Pue.</Direccion>
+		<Telefono>222-333-4553</Telefono>
+		<Imagen></Imagen>
+	</Datos>
+</Menu>
