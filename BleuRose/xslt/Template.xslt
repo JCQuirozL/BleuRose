@@ -29,6 +29,32 @@ https://templatemo.com/tm-546-sixteen-clothing
 				<link rel="stylesheet" href="assets/css/fontawesome.css"/>
 				<link rel="stylesheet" href="assets/css/templatemo-sixteen.css"/>
 				<link rel="stylesheet" href="assets/css/owl.css"/>
+
+				<script src="vendor/jquery/jquery.min.js"></script>
+
+				<!-- Bootstrap core JavaScript -->
+
+				<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+				<!-- Additional Scripts -->
+				<script src="assets/js/custom.js"></script>
+				<script src="assets/js/owl.js"></script>
+				<script src="assets/js/slick.js"></script>
+				<script src="assets/js/isotope.js"></script>
+				<script src="assets/js/accordions.js"></script>
+
+
+				<script language = "text/Javascript">
+					cleared[0] = cleared[1] = cleared[2] = 0; <!--set a cleared flag for each field-->
+					function clearField(t){   <!--declaring the array outside of the-->
+					if(! cleared[t.id]){                      <!--function makes it static and global-->
+					cleared[t.id] = 1;   <!--you could use true and false, but that's more typing-->
+					t.value='';         <!--with more chance of typos-->
+					t.style.color='#fff';
+					}
+					}
+				</script>
 			</head>
 			<body>
 
@@ -42,7 +68,7 @@ https://templatemo.com/tm-546-sixteen-clothing
 				</div>
 				<!-- ***** Preloader End ***** -->
 
-				<!-- Header -->
+				<!-- Header , navbar -->
 				<header class="">
 					<nav class="navbar navbar-expand-lg">
 						<div class="container">
@@ -88,7 +114,7 @@ https://templatemo.com/tm-546-sixteen-clothing
 				<!-- Choose para mostrar dinámicamente el contenido de cada opcion del menú-->
 				<xsl:choose>
 					<xsl:when test="$TipoMenu=1">
-						<h1>Products Page</h1>
+						<xsl:call-template name="Products"/>
 					</xsl:when>
 					<xsl:when test="$TipoMenu=2">
 						<h1>Us Page</h1>
@@ -101,46 +127,21 @@ https://templatemo.com/tm-546-sixteen-clothing
 					</xsl:otherwise>
 				</xsl:choose>
 
-				<!-- Bootstrap core JavaScript -->
-				<script src="vendor/jquery/jquery.min.js"></script>
-				<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-
-				<!-- Additional Scripts -->
-				<script src="assets/js/custom.js"></script>
-				<script src="assets/js/owl.js"></script>
-				<script src="assets/js/slick.js"></script>
-				<script src="assets/js/isotope.js"></script>
-				<script src="assets/js/accordions.js"></script>
-
-
-				<script language = "text/Javascript">
-					cleared[0] = cleared[1] = cleared[2] = 0; <!--set a cleared flag for each field-->
-					function clearField(t){   <!--declaring the array outside of the-->
-					if(! cleared[t.id]){                      <!--function makes it static and global-->
-					cleared[t.id] = 1;   <!--you could use true and false, but that's more typing-->
-					t.value='';         <!--with more chance of typos-->
-					t.style.color='#fff';
-					}
-					}
-				</script>
-
-
-			</body>
-			<!-- Footer -->
-			<footer>
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="inner-content">
-								<p>
-									Copyright 2080 BleuRose Co., Ltd.
-								</p>
+				<!-- Footer -->
+				<footer>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="inner-content">
+									<p>
+										Copyright 2080 BleuRose Co., Ltd.
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</footer>
+				</footer>
+			</body>
 		</html>
 	</xsl:template>
 
@@ -245,5 +246,94 @@ https://templatemo.com/tm-546-sixteen-clothing
 		</div>
 	</xsl:template>
 
+	<xsl:template name="Products">
+
+		<div class="page-heading products-heading header-text">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="text-content">
+							<h4>novedades</h4>
+							<h2>Bleu Rose Productos</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="products">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" id="{@Nombre}">
+						<div class="filters">
+							<ul>
+								<!--Iterar para obtener los títulos de Categorías-->
+								<xsl:for-each select="Prendas/Tipo">
+									<li class="tipomenu active" data-filter="{@Nombre}" id="li{@Nombre}">
+										<xsl:value-of select="@Nombre"/>
+									</li>
+
+								</xsl:for-each>
+							</ul>
+						</div>
+					</div>
+					<!--Iterar para mostrar los contenedores-->
+					
+						<xsl:for-each select="Prendas/Tipo">
+							<div class="col-md-12 contenedores" id="{@Nombre}">
+								<div class="filters-content">
+									<div class="row grid">
+										<div class="mydiv">
+											<!--Iterar para mostrar las prenda seleccionada-->
+											<xsl:for-each select="Prenda">
+												<div class="items">
+													<a href="#">
+														<img class="imagenes" src="{Imagen}" alt=""/>
+													</a>
+
+													<div class="down-content">
+														<a >
+															<h4>
+																<xsl:value-of select="@Nombre"/>
+															</h4>
+														</a>
+														<h6>
+															<xsl:value-of select="Precio"/>
+														</h6>
+														<p>
+															<xsl:value-of select="Descripcion"/>.
+														</p>
+														<span>Reviews (12)</span>
+													</div>
+												</div>
+											</xsl:for-each>
+										</div>
+									</div>
+								</div>
+							</div>
+						</xsl:for-each>
+					</div>
+				</div>
+			</div>
+		
+		<script>
+			$(document).ready(function(){
+			$("#liCalzado").addClass("active");
+			$(".contenedores").hide();
+			$("#Calzado").show();
+				$(".tipomenu").click(function()
+				{
+				$(".contenedores").hide();
+				var nombre = $(this).data("filter");
+				$(".tipomenu").removeClass("active");
+				$(this).addClass("active");
+				$("#" + nombre).show();
+			});
+			});
+
+		</script>
+
+
+	</xsl:template>
 
 </xsl:stylesheet>

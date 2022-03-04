@@ -1,5 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Menu>
+	<Categorias>
+		<Categoria Nombre="Todos"></Categoria>
+		<Categoria Nombre="Destacados"></Categoria>
+		<Categoria Nombre="Ofertas relámpago"></Categoria>
+		<Categoria Nombre="De último minuto"></Categoria>
+	</Categorias>
 	<Lista>
 		<Elemento>
 			<Titulo>Productos de Calidad</Titulo>
@@ -13,7 +19,7 @@
 		<Elemento>
 			<Titulo>Reconocimiento internacional</Titulo>
 		</Elemento>
-		
+
 	</Lista>
 	<Items>
 		<Item Numero="1" Nombre="La mejor Oferta" Descripción="Novedades en Venta">
@@ -37,6 +43,26 @@
 				<Descripcion>Unas botitas pa' cuando vayas a la montaña o a un lugar que haga chingo de frío ALV!</Descripcion>
 				<Precio>$850</Precio>
 				<Imagen>/assets/images/product_01.jpg</Imagen>
+			</Prenda>
+			<Prenda Nombre="Botas con peluche" Id="1">
+				<Descripcion>Unas botitas con peluche bien chulas</Descripcion>
+				<Precio>$750</Precio>
+				<Imagen>/assets/images/product_011.jpg</Imagen>
+			</Prenda>
+			<Prenda Nombre="Botas con MÁS peluche" Id="1">
+				<Descripcion>Unas botitas con MÁS peluche bien chulas</Descripcion>
+				<Precio>$750</Precio>
+				<Imagen>/assets/images/product_012.jpg</Imagen>
+			</Prenda>
+			<Prenda Nombre="Botas medias piratonas" Id="1">
+				<Descripcion>Botas medias piratonas, pero hay raza que les gustan</Descripcion>
+				<Precio>$1,050</Precio>
+				<Imagen>/assets/images/product_013.jpg</Imagen>
+			</Prenda>
+			<Prenda Nombre="Botas medias piratonas" Id="1">
+				<Descripcion>Botas medias piratonas, pero hay raza que les gustan</Descripcion>
+				<Precio>$1,050</Precio>
+				<Imagen>/assets/images/product_013.jpg</Imagen>
 			</Prenda>
 		</Tipo>
 		<Tipo Nombre="Gorros">
