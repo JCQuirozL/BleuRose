@@ -86,8 +86,13 @@ a.filled-button {
         flex-wrap: wrap;
         gap: 2rem;
         min-height: 100%;
-        place-content:center;
+        place-content: center;
     }
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
 }
 
 .down-content {
@@ -100,15 +105,20 @@ a.filled-button {
     width: 22rem;
     height: 23rem;
     border: solid 1px #d8deea;
-    text-align:center;
+    text-align: center;
 }
 
 .imagenes {
     height: 170px;
     max-width: 320px;
-    
 }
 
+.bluerose{
+    padding:1px;
+    border:solid 2px #068ff6;
+    
+
+}
 
 .section-heading {
     text-align: left;
@@ -648,6 +658,7 @@ header {
 
 footer {
     text-align: center;
+    margin-top: 0;
 }
 
 .inner-content {

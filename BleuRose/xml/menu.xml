@@ -39,7 +39,7 @@
 	</Opciones>
 	<Prendas>
 		<Tipo Nombre="Calzado">
-			<Prenda Nombre="Botas pal' frío" Id="1">
+			<Prenda Nombre="Botas pal' frío" Id="0">
 				<Descripcion>Unas botitas pa' cuando vayas a la montaña o a un lugar que haga chingo de frío ALV!</Descripcion>
 				<Precio>$850</Precio>
 				<Imagen>/assets/images/product_01.jpg</Imagen>
@@ -49,20 +49,25 @@
 				<Precio>$750</Precio>
 				<Imagen>/assets/images/product_011.jpg</Imagen>
 			</Prenda>
-			<Prenda Nombre="Botas con MÁS peluche" Id="1">
+			<Prenda Nombre="Botas con MÁS peluche" Id="2">
 				<Descripcion>Unas botitas con MÁS peluche bien chulas</Descripcion>
 				<Precio>$750</Precio>
 				<Imagen>/assets/images/product_012.jpg</Imagen>
 			</Prenda>
-			<Prenda Nombre="Botas medias piratonas" Id="1">
+			<Prenda Nombre="Botas medias piratonas" Id="3">
 				<Descripcion>Botas medias piratonas, pero hay raza que les gustan</Descripcion>
 				<Precio>$1,050</Precio>
 				<Imagen>/assets/images/product_013.jpg</Imagen>
 			</Prenda>
-			<Prenda Nombre="Botas medias piratonas" Id="1">
-				<Descripcion>Botas medias piratonas, pero hay raza que les gustan</Descripcion>
-				<Precio>$1,050</Precio>
-				<Imagen>/assets/images/product_013.jpg</Imagen>
+			<Prenda Nombre="Botas para la nieve" Id="4">
+				<Descripcion>Calzado en tendencia para montaña</Descripcion>
+				<Precio>$1,850</Precio>
+				<Imagen>/assets/images/product_014.jpg</Imagen>
+			</Prenda>
+			<Prenda Nombre="Botines" Id="5">
+				<Descripcion>Botines de invierno para dama</Descripcion>
+				<Precio>$1,899</Precio>
+				<Imagen>/assets/images/product_015.jpg</Imagen>
 			</Prenda>
 		</Tipo>
 		<Tipo Nombre="Gorros">
@@ -71,12 +76,32 @@
 				<Precio>$250</Precio>
 				<Imagen>/assets/images/product_02.jpg</Imagen>
 			</Prenda>
+			<Prenda Nombre="Conjunto" Id="2">
+				<Descripcion>Conjunto de gorro y bufanda para caballero</Descripcion>
+				<Precio>$350</Precio>
+				<Imagen>/assets/images/product_020.jpg</Imagen>
+			</Prenda>
+			<Prenda Nombre="Gorro unisex" Id="2">
+				<Descripcion>Gorro en colores varios unisex</Descripcion>
+				<Precio>$250</Precio>
+				<Imagen>/assets/images/product_021.jpg</Imagen>
+			</Prenda>
 		</Tipo>
 		<Tipo Nombre="Bufandas">
-			<Prenda Nombre="Bufandas de colores" Id="3">
+			<Prenda Nombre="Bufandas de colores" Id="0">
 				<Descripcion>Bufandas baras pa' que no se te congele el buche</Descripcion>
 				<Precio>$350</Precio>
 				<Imagen>/assets/images/product_03.jpg</Imagen>
+			</Prenda>
+			<Prenda Nombre="Bufanda grande" Id="1">
+				<Descripcion>Bufanda tipo chal en variedad de colores</Descripcion>
+				<Precio>$550</Precio>
+				<Imagen>/assets/images/product_030.jpg</Imagen>
+			</Prenda>
+			<Prenda Nombre="Bufandas amarilla" Id="2">
+				<Descripcion>Bufanda grande en color amarillo</Descripcion>
+				<Precio>$550</Precio>
+				<Imagen>/assets/images/product_031.jpg</Imagen>
 			</Prenda>
 		</Tipo>
 		<Tipo Nombre="Regalos">
@@ -85,12 +110,42 @@
 				<Precio>$150</Precio>
 				<Imagen>/assets/images/product_04.jpg</Imagen>
 			</Prenda>
+			<Prenda Nombre="Copas navideñas" Id="4">
+				<Descripcion>Paquete de copas navideñas con diseños variados</Descripcion>
+				<Precio>$1,250</Precio>
+				<Imagen>/assets/images/product_060.jpg</Imagen>
+			</Prenda>
+			<Prenda Nombre="Arbolito" Id="4">
+				<Descripcion>Arbolito de navidad a escala hecho a mano</Descripcion>
+				<Precio>$50</Precio>
+				<Imagen>/assets/images/product_061.jpg</Imagen>
+			</Prenda>
+			<Prenda Nombre="Vela" Id="4">
+				<Descripcion>Vela color blanco adornada con flores</Descripcion>
+				<Precio>$250</Precio>
+				<Imagen>/assets/images/product_062.jpg</Imagen>
+			</Prenda>
 		</Tipo>
 		<Tipo Nombre="Suéteres">
 			<Prenda Nombre="Suéteres calientitos" Id="5">
 				<Descripcion>Suéters bien padres pa' que luzcas bien perrón y no te congeles cuando haga frío pinche perro!</Descripcion>
 				<Precio>$650</Precio>
 				<Imagen>/assets/images/product_05.jpg</Imagen>
+			</Prenda>
+			<Prenda Nombre="Suéter a colores" Id="5">
+				<Descripcion>Suéter de colores tejido a mano</Descripcion>
+				<Precio>$1,250</Precio>
+				<Imagen>/assets/images/product_050.jpg</Imagen>
+			</Prenda>
+			<Prenda Nombre="Suéter unisex" Id="5">
+				<Descripcion>Suéter unisex bicolor, rojo y blanco</Descripcion>
+				<Precio>$650</Precio>
+				<Imagen>/assets/images/product_051.jpg</Imagen>
+			</Prenda>
+			<Prenda Nombre="Suéteres a rayas" Id="5">
+				<Descripcion>Suéter a rayas para mujer</Descripcion>
+				<Precio>$650</Precio>
+				<Imagen>/assets/images/product_052.jpg</Imagen>
 			</Prenda>
 		</Tipo>
 		<Tipo Nombre="Adornos">
@@ -99,34 +154,54 @@
 				<Precio>$80</Precio>
 				<Imagen>/assets/images/product_06.jpg</Imagen>
 			</Prenda>
+			<Prenda Nombre="Paquete esferas" Id="4">
+				<Descripcion>Paquete de esferas en color rojo</Descripcion>
+				<Precio>$150</Precio>
+				<Imagen>/assets/images/product_041.jpg</Imagen>
+			</Prenda>
+			<Prenda Nombre="Esfera mediana" Id="4">
+				<Descripcion>Esfera tamaño mediano color dorado para arbol de navidad</Descripcion>
+				<Precio>$50</Precio>
+				<Imagen>/assets/images/product_040.jpg</Imagen>
+			</Prenda>
+			<Prenda Nombre="Corona" Id="4">
+				<Descripcion>Corona grande navideña color dorado</Descripcion>
+				<Precio>$250</Precio>
+				<Imagen>/assets/images/product_042.jpg</Imagen>
+			</Prenda>
 		</Tipo>
 	</Prendas>
 	<Team>
 		<Members>
-			<Member Nombre="Fulano1">
+			<Member Nombre="Al Coholic">
 				<Puesto>Fundador</Puesto>
-				<Descripcion>Éste vato es el fundador</Descripcion>
+				<Descripcion>Éste vato es el fundador y es la mera pistola pa' los bisnes, tiene otros negocios tambien, no, no es narco.</Descripcion>
+				<Imagen>/assets/images/team_01.jpg</Imagen>
 			</Member>
-			<Member Nombre="Fulano2">
+			<Member Nombre="Estoyca Chondo">
 				<Puesto>Experta en productos</Puesto>
-				<Descripcion>Ésta morra es la mera chicles pa' los productos que vendemos</Descripcion>
-
+				<Descripcion>Ésta morra es la mera chicles pa' los productos que vendemos, aunque usted no lo crea.</Descripcion>
+				<Imagen>/assets/images/team_02.jpg</Imagen>
 			</Member>
-			<Member Nombre="Fulano3">
+			<Member Nombre="Phillip Ollas">
 				<Puesto>Jefe de Marketing</Puesto>
-				<Descripcion>Éste vato es el todo el rollo de mercadotenia, si estamos bien posicionados es por el y si valemos vrg@ es por el tmb</Descripcion>
+				<Descripcion>Éste vato es el de todo el rollo de mercadotenia, si estamos bien posicionados es por el.</Descripcion>
+				<Imagen>/assets/images/team_03.jpg</Imagen>
 			</Member>
-			<Member Nombre="Fulano4">
+			<Member Nombre="Tess T. Culls">
 				<Puesto>Especialista en productos</Puesto>
-				<Descripcion>Ésta morra es la especialista en productos (ya tenemos una experta no sé pa' que chingados queremos una "especialista" pero bueno)</Descripcion>
+				<Descripcion>Ésta morra es la especialista en productos.</Descripcion>
+				<Imagen>/assets/images/team_04.jpg</Imagen>
 			</Member>
-			<Member Nombre="Fulano5">
+			<Member Nombre="Empel Otas">
 				<Puesto>Fotógrafo de Productos</Puesto>
 				<Descripcion>Éste man saca unas fotitos bien chulas pa' nuestros productos</Descripcion>
+				<Imagen>/assets/images/team_05.jpg</Imagen>
 			</Member>
-			<Member Nombre="Fulano6">
+			<Member Nombre="Elsa Badón">
 				<Puesto>Manager</Puesto>
 				<Descripcion>Éste morra es la de las decisiones chakas</Descripcion>
+				<Imagen>/assets/images/team_06.jpg</Imagen>
 			</Member>
 		</Members>
 	</Team>
@@ -146,6 +221,6 @@
 		<Descripcion>BleuRose es una empresa recién fundada con experiencia en el mercado ofreciendo prendas de invierno de calidad a precio justo y duraderas.</Descripcion>
 		<Direccion>Blvd. San Felipe #222 Col. Valle del Ángel, Puebla, Pue.</Direccion>
 		<Telefono>222-333-4553</Telefono>
-		<Imagen></Imagen>
+		<Imagen>/assets/images/pinkbear.jpg</Imagen>
 	</Datos>
 </Menu>
