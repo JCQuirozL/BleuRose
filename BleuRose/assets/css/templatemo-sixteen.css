@@ -113,11 +113,50 @@ a.filled-button {
     max-width: 320px;
 }
 
-.bluerose{
-    padding:1px;
-    border:solid 2px #068ff6;
-    
+.bluerose {
+    padding: 1px;
+    border: solid 2px #068ff6;
+}
 
+.pink-border {
+    border: solid 2px #d527f7;
+    margin: 1rem 0 1rem 0;
+}
+
+.drag-div {
+    width: 525px;
+    height: 195px;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.imagenes-carrito{
+    width:120px;
+    height:90px;
+    padding:1rem;
+    
+}
+
+@media (min-width: 768px) {
+    .cont-dnd {
+        width: 1024px;
+        max-width: 1024px;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        gap: 10rem;
+        place-content: center;
+    }
+}
+
+.carrito {
+    width: 300px;
+    height: 350px;
+}
+
+#video{
+    width:400px;
+    height:400px;
 }
 
 .section-heading {

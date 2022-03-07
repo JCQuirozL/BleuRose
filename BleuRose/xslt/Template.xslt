@@ -57,6 +57,9 @@ https://templatemo.com/tm-546-sixteen-clothing
 				</script>
 			</head>
 			<body>
+				
+								
+							
 				<div class="page-container">
 					<!-- ***** Preloader Start ***** -->
 					<div id="preloader">
@@ -72,7 +75,7 @@ https://templatemo.com/tm-546-sixteen-clothing
 					<header class="">
 						<nav class="navbar navbar-expand-lg">
 							<div class="container">
-								<a class="navbar-brand" href="index.html">
+								<a class="navbar-brand" href="{Opciones/Opcion/@Url[1]}">
 									<h2>
 										<xsl:value-of select="substring(Datos/Empresa,1,4)"/>
 										<em>
@@ -122,6 +125,9 @@ https://templatemo.com/tm-546-sixteen-clothing
 						<xsl:when test="$TipoMenu=3">
 							<xsl:call-template name="Contact"/>
 						</xsl:when>
+						<xsl:when test="$TipoMenu=4">
+							<xsl:call-template name="Extras"/>
+						</xsl:when>
 						<xsl:otherwise>
 							<xsl:call-template name="Home"/>
 						</xsl:otherwise>
@@ -150,6 +156,7 @@ https://templatemo.com/tm-546-sixteen-clothing
 		<!-- HOMEPAGE -->
 		<!-- Page Content -->
 		<!-- Banner Starts Here -->
+		<audio src="/assets/media/wl.mp3" autoplay="true"/>
 		<div class="page-container">
 			<div class="banner header-text">
 				<div class="owl-banner owl-carousel">
@@ -250,6 +257,7 @@ https://templatemo.com/tm-546-sixteen-clothing
 	</xsl:template>
 
 	<xsl:template name="Products">
+		<audio src="/assets/media/ttl-wl.mp3" autoplay="true"/>
 		<div class="">
 			<div class="page-heading products-heading header-text">
 				<div class="container">
@@ -341,6 +349,7 @@ https://templatemo.com/tm-546-sixteen-clothing
 	</xsl:template>
 
 	<xsl:template name="Us">
+		<audio src="/assets/media/bigtv-wl.mp3" autoplay="true"/>
 		<!--Heading-->
 		<div class="page-heading about-heading header-text">
 			<div class="container">
@@ -473,6 +482,10 @@ https://templatemo.com/tm-546-sixteen-clothing
 	</xsl:template>
 
 	<xsl:template name="Contact">
+		<audio src="/assets/media/imle-wl.mp3" autoplay="true"/>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWeeateTaYGqsHhNcmoDfT7Us-vLDZVPs&amp;sensor=false&amp;language=en"></script>
+
+		<script src="/assets/js/Geolocation.js"></script>
 		<!-- Page Content -->
 		<div class="page-heading contact-heading header-text">
 			<div class="container">
@@ -508,7 +521,7 @@ https://templatemo.com/tm-546-sixteen-clothing
 						<div class="col-lg-6 col-md-6">
 							<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWeeateTaYGqsHhNcmoDfT7Us-vLDZVPs&amp;sensor=false&amp;language=en"></script>
 							<div id="google-map">
-								<div id="mapa">
+								<div class="pink-border" id="mapa">
 								</div>
 
 							</div>
@@ -519,8 +532,8 @@ https://templatemo.com/tm-546-sixteen-clothing
 				<div class="col-md-4">
 					<div class="left-content">
 						<h4>Nuestra oficina</h4>
-						<p>
-							<xsl:value-of select="concat(Datos/Direccion,  'Tel: ', Datos/Telefono)"/>
+						<p id="direccion">
+							<!--<xsl:value-of select="concat(Datos/Direccion,  'Tel: ', Datos/Telefono)"/>-->
 						</p>
 						<ul class="social-icons">
 							<li>
@@ -603,11 +616,107 @@ https://templatemo.com/tm-546-sixteen-clothing
 							</li>
 
 						</ul>
+
+						<div class="pink-border" id="street">
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
+		<script>
+			$(document).ready(function(){
+			getGeo();
+			dibujaMapa(19.0715921, -98.220233);
+			});
 
+		</script>
+	</xsl:template>
+
+	<xsl:template name="Extras">
+		<script src="/assets/js/dragndrop.js"></script>
+		<!-- Page Content -->
+		<div class="page-heading contact-heading header-text">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="text-content">
+							<h4>Contenido extra</h4>
+							<h2>Bienvenido!</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="find-us">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-heading">
+							<h2 style="font-weight:bold;">Arrastra tus productos al carrito!</h2>
+
+
+						</div>
+					</div>
+					<div class="col-md-8">
+						<!-- How to change your own map point
+	1. Go to Google Maps
+	2. Click on your location point
+	3. Click "Share" and choose "Embed map" tab
+	4. Copy only URL and paste it within the src="" field below
+-->
+
+						<p>
+							Productos: <span id="agregados"></span>
+						</p>
+						<div class="col-lg-6 col-md-6">
+							<div class="cont-dnd">
+
+
+								<div class="pink-border">
+									<div id="content" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return clonar(event)" class="carrito">
+									</div>
+								</div>
+
+								<div id="cuadro" class="drag-div">
+
+									<img id="arrastrable1" ondragstart="start(event)" ondragend="end(event)" draggable="true" class="imagenes-carrito" src="/assets/images/product_01.jpg"/>
+
+									<img  id="arrastrable2" draggable="true" ondragstart="start(event)" ondragend="end(event)" class="imagenes-carrito" src="/assets/images/product_02.jpg" />
+
+									<img id="arrastrable3" draggable="true" ondragstart="start(event)" ondragend="end(event)" class="imagenes-carrito" src="/assets/images/product_03.jpg" />
+
+									<img id="arrastrable4" draggable="true" ondragstart="start(event)" ondragend="end(event)" class="imagenes-carrito" src="/assets/images/product_04.jpg" />
+
+									<img id="arrastrable5" draggable="true" ondragstart="start(event)" ondragend="end(event)" class="imagenes-carrito" src="/assets/images/product_05.jpg" />
+
+									<img id="arrastrable5" draggable="true" ondragstart="start(event)" ondragend="end(event)" class="imagenes-carrito" src="/assets/images/product_06.jpg" />
+
+									<img id="arrastrable5" draggable="true" ondragstart="start(event)" ondragend="end(event)" class="imagenes-carrito" src="/assets/images/product_011.jpg" />
+
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="left-content">
+						<h4></h4>
+						<p style="font-weight:bold;font-size:2rem;margin-top:2rem;" id="direccion">
+							<![CDATA[Video & póster]]> 
+						</p>
+						<div id="video">
+							<video width="100%" controls="true" poster="assets/images/wrc.jpg">
+								<source src="/assets/media/wrc.mp4">
+								</source>
+							</video>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</xsl:template>
 </xsl:stylesheet>
