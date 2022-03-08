@@ -121,20 +121,40 @@ a.filled-button {
 .pink-border {
     border: solid 2px #d527f7;
     margin: 1rem 0 1rem 0;
+    height:350px
 }
 
-.drag-div {
-    width: 525px;
-    height: 195px;
-    display:flex;
-    flex-wrap:wrap;
+@media(min-width: 768px) {
+
+    .drag-div {
+        margin-bottom:2rem;
+        width: 525px;
+        height: 195px;
+        display: flex;
+        flex-wrap: wrap;
+        border:2px solid #068ff6;
+    }
 }
 
-.imagenes-carrito{
-    width:120px;
-    height:90px;
-    padding:1rem;
-    
+@media(min-width: 768px) {
+
+    .papelera {
+        margin-top:1rem;
+        width: 525px;
+        height: 195px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: 2px solid #f64106;
+    }
+}
+
+
+
+.imagenes-carrito {
+    width: 120px;
+    height: 90px;
+    padding: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -142,9 +162,9 @@ a.filled-button {
         width: 1024px;
         max-width: 1024px;
         display: flex;
-        flex-direction:row;
+        flex-direction: row;
         flex-wrap: wrap;
-        gap: 10rem;
+        gap: 5rem;
         place-content: center;
     }
 }
@@ -154,9 +174,9 @@ a.filled-button {
     height: 350px;
 }
 
-#video{
-    width:400px;
-    height:400px;
+#video {
+    width: 400px;
+    height: 400px;
 }
 
 .section-heading {

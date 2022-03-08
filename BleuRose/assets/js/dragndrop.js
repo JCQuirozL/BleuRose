@@ -1,5 +1,6 @@
 ﻿var contador = 0;
 var elemArrastrableId = "";
+var articulos = 0;
 
 
 function start(e) {
@@ -48,10 +49,19 @@ function drop(e) {
 
 
 function eliminar(e) {
+    if (origen == "cuadro") {
+        alert("Solo puedes eliminar productos del carrito");
+        e.target.style.border = "";
+        return;
+    }
+    
     console.log("eliminar");
     var elementoArrastrado = document.getElementById(e.dataTransfer.getData("Data")); //arrastrable1
     elementoArrastrado.parentNode.removeChild(elementoArrastrado);
     e.target.style.border = "";
+    contador--;
+        $("#agregados").html(contador);
+  
 
 }
 

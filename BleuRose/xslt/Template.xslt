@@ -57,9 +57,9 @@ https://templatemo.com/tm-546-sixteen-clothing
 				</script>
 			</head>
 			<body>
-				
-								
-							
+
+
+
 				<div class="page-container">
 					<!-- ***** Preloader Start ***** -->
 					<div id="preloader">
@@ -678,23 +678,29 @@ https://templatemo.com/tm-546-sixteen-clothing
 									<div id="content" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return clonar(event)" class="carrito">
 									</div>
 								</div>
+								<div class="doble-content">
+									<div id="cuadro" class="drag-div"  >
 
-								<div id="cuadro" class="drag-div">
+										<img id="arrastrable1" ondragstart="start(event)" ondragend="end(event)" draggable="true" class="imagenes-carrito" src="/assets/images/product_01.jpg"/>
 
-									<img id="arrastrable1" ondragstart="start(event)" ondragend="end(event)" draggable="true" class="imagenes-carrito" src="/assets/images/product_01.jpg"/>
+										<img  id="arrastrable2" draggable="true" ondragstart="start(event)" ondragend="end(event)" class="imagenes-carrito" src="/assets/images/product_02.jpg" />
 
-									<img  id="arrastrable2" draggable="true" ondragstart="start(event)" ondragend="end(event)" class="imagenes-carrito" src="/assets/images/product_02.jpg" />
+										<img id="arrastrable3" draggable="true" ondragstart="start(event)" ondragend="end(event)" class="imagenes-carrito" src="/assets/images/product_03.jpg" />
 
-									<img id="arrastrable3" draggable="true" ondragstart="start(event)" ondragend="end(event)" class="imagenes-carrito" src="/assets/images/product_03.jpg" />
+										<img id="arrastrable4" draggable="true" ondragstart="start(event)" ondragend="end(event)" class="imagenes-carrito" src="/assets/images/product_04.jpg" />
 
-									<img id="arrastrable4" draggable="true" ondragstart="start(event)" ondragend="end(event)" class="imagenes-carrito" src="/assets/images/product_04.jpg" />
+										<img id="arrastrable5" draggable="true" ondragstart="start(event)" ondragend="end(event)" class="imagenes-carrito" src="/assets/images/product_05.jpg" />
 
-									<img id="arrastrable5" draggable="true" ondragstart="start(event)" ondragend="end(event)" class="imagenes-carrito" src="/assets/images/product_05.jpg" />
+										<img id="arrastrable6" draggable="true" ondragstart="start(event)" ondragend="end(event)" class="imagenes-carrito" src="/assets/images/product_06.jpg" />
 
-									<img id="arrastrable5" draggable="true" ondragstart="start(event)" ondragend="end(event)" class="imagenes-carrito" src="/assets/images/product_06.jpg" />
+										<img id="arrastrable7" draggable="true" ondragstart="start(event)" ondragend="end(event)" class="imagenes-carrito" src="/assets/images/product_011.jpg" />
 
-									<img id="arrastrable5" draggable="true" ondragstart="start(event)" ondragend="end(event)" class="imagenes-carrito" src="/assets/images/product_011.jpg" />
+									</div>
 
+									<h3>Arrastra aquí para eliminar</h3>
+
+									<div id="papelera" class="papelera"  ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)">
+									</div>
 								</div>
 							</div>
 
@@ -706,7 +712,7 @@ https://templatemo.com/tm-546-sixteen-clothing
 					<div class="left-content">
 						<h4></h4>
 						<p style="font-weight:bold;font-size:2rem;margin-top:2rem;" id="direccion">
-							<![CDATA[Video & póster]]> 
+							<![CDATA[Video & póster]]>
 						</p>
 						<div id="video">
 							<video width="100%" controls="true" poster="assets/images/wrc.jpg">
