@@ -23,7 +23,8 @@ public partial class contacto : System.Web.UI.Page
             string resultado = sendMail(from, subject, text);
 
             Label1.Text = resultado;
-            Response.Redirect("Default.aspx");
+            SweetBoxConfirm("Éxito", "Correo enviado", "success", "Default.aspx", this.Page, this.GetType());
+            //Response.Redirect("Default.aspx");
         }
 
     }
@@ -55,7 +56,7 @@ public partial class contacto : System.Web.UI.Page
         try
         {
             client.Send(oMail);
-            return "Correo enviado";
+            return "Enviando el email, por favor espere...";
             
         }
         catch (Exception ex)
@@ -64,5 +65,15 @@ public partial class contacto : System.Web.UI.Page
         }
 
         
+    }
+    public static void SweetBoxConfirm(String ex, String sub, String type, string url, Page pg, Object obj)
+    {
+        string s = "<SCRIPT language='javascript'>";
+        s += "swal({title: '" + ex + "',text: '" + sub + "',type: '" + type + "',showCancelButton: false,confirmButtonColor: '#DD6B55', confirmButtonText: 'OK',closeOnConfirm: true},function(){document.location.href = '" + url + "';});</SCRIPT>";
+
+
+        Type cstype = obj.GetType();
+        ClientScriptManager cs = pg.ClientScript;
+        cs.RegisterClientScriptBlock(cstype, s, s.ToString());
     }
 }
